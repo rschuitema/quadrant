@@ -7,8 +7,8 @@ d3.csv('data.csv', function (data) {
 	var formatPercent = d3.format('.2%')
 	// Scales
   var colorScale = d3.scale.linear()
-      .domain([0, 50])
-      .range(["green", "red"])
+      .domain([0, 50, 75, 100])
+      .range(["#79B94F", "#FFCC05", "#FB8738", "#CC0505"])
       
   var xScale = d3.scale.linear()
     .domain([-100, 100])
